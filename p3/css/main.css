@@ -49,6 +49,11 @@ body {
   width: 10%;
 }
 
+.aim {
+  font-size: 20vh;
+  animation: on-aim 0.5s cubic-bezier(.1, .8, .5, .9) 1;
+}
+
 /*box shadows*/
 .top.left {
   box-shadow: 2px 0 0 2px black;
@@ -100,5 +105,15 @@ body {
 
   to {
     background-color: rgba(173, 216, 230, 0);
+  }
+}
+
+@keyframes on-aim {
+  from {
+    transform: scale(0.1);
+  }
+
+  to {
+    transform: scale(1);
   }
 }
