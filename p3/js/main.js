@@ -125,6 +125,7 @@ function reset() {
   for (i = 0; i < 3; i++) {
     for (j = 0; j < 3; j++) {
       list[i][j].childNodes[0].innerHTML = "";
+      list[i][j].childNodes[0].classList.remove("aim");
     }
   }
 }
